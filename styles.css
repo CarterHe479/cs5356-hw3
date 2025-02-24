@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    /* column as direction */
+    flex-direction: column;
+    /* make sure fit the screen */
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    /* allow wrap in sub element */
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+main img {
+    min-width: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+main p {
+    min-width: 300px;
+    max-width: 100%;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* media, when less than 768px apply */
+@media (max-width: 768px) {
+    main img,
+    main p {
+        width: 100%;
+    }
+}
