@@ -23,8 +23,7 @@ main {
 }
 
 main img {
-    min-width: 100px;
-    max-width: 100%;
+    min-width: 50px;
     height: auto;
     /* add filter */
     filter: grayscale(0);
@@ -33,6 +32,19 @@ main img {
 
 main img:hover {
     filter: grayscale(1);
+}
+
+main video {
+    min-width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#cat-image-container img {
+    width: 200px; /* 可以根据需要调整宽度 */
+    height: auto; /* 保持图片比例 */
 }
 
 main p {
