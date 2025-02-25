@@ -29,6 +29,34 @@
     <footer>
         <p>Created by Carter He</p>
     </footer>
+
+    <!-- add  cat image-->
+     <div id="cat-image-container">
+        <h2>Random Cat Image for Fun!</h2>>
+        <img id="cat-image" src="" alt="Random Cat Image">
+     </div>
+
+     <script>
+        const catImageContainer = document.getElementById('cat-image-container');
+        const catImage = document.getElementById('cat-image');
+
+        fetch('https://api.thecatapi.com/v1/images/search')
+           .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+           .then(data => {
+                const catImageUrl = data[0].url;
+                // set the src attribute of the cat image to the URL of the random cat image
+                catImage.src = catImageUrl;
+            })
+           .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+                catImageContainer.innerHTML = '<p>Sorry, could not load a cat image. Please try again later.</p>';
+            });        
+     </script>
     
 </body>
 
