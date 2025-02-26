@@ -31,7 +31,7 @@ main img {
 }
 
 main img:hover {
-    filter: grayscale(1);
+    filter: grayscale(0.5) brightness(1.2);
 }
 
 main video {
@@ -42,10 +42,21 @@ main video {
     margin: 0 auto;
 }
 
-#cat-image-container img {
-    width: 200px; /* 可以根据需要调整宽度 */
-    height: auto; /* 保持图片比例 */
+#cat-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center;
+    margin-top: 20px;
 }
+
+#cat-image-container img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Ensures centering */
+}
+
 
 main p {
     width: 80%; /* Adjust the width of the text */
@@ -65,6 +76,7 @@ footer {
     main img,
     main p,
     main video {
-        width: 100%;
+        width: 90%;
+        max-width: 500px; /* Prevent oversized images/videos */
     }
 }
