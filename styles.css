@@ -23,9 +23,8 @@ main {
 }
 
 main img {
-    width: 200px; /* Set a fixed width to make the image smaller */
+    width: 200px;
     height: auto;
-    /* add filter */
     filter: grayscale(0);
     transition: filter 0.5s ease;
 }
@@ -35,8 +34,8 @@ main img:hover {
 }
 
 main video {
-    width: 80%; /* Make the video larger */
-    max-width: 800px; /* Limit the maximum width */
+    width: 80%; 
+    max-width: 800px; 
     height: auto;
     display: block;
     margin: 0 auto;
@@ -45,7 +44,7 @@ main video {
 #cat-image-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
+    align-items: center; 
     text-align: center;
     margin-top: 20px;
 }
@@ -54,14 +53,14 @@ main video {
     width: 200px;
     height: auto;
     display: block;
-    margin: 0 auto; /* Ensures centering */
+    margin: 0 auto; 
 }
 
 
 main p {
-    width: 80%; /* Adjust the width of the text */
-    max-width: 800px; /* Limit the maximum width */
-    text-align: center; /* Center the text */
+    width: 80%; 
+    max-width: 800px; 
+    text-align: center; 
 }
 
 footer {
